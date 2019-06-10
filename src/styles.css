@@ -1,0 +1,16 @@
+/* You can add global styles to this file, and also import other style files */
+.column-text-align{
+    margin:5%;
+    display:block;
+}
+.column-bg-color{
+    background-color:lightgray;
+}
+/* Important part */
+.modal-dialog{
+    overflow-y: initial !important
+}
+.modal-body{
+    height: 250px;
+    overflow-y: auto;
+}
