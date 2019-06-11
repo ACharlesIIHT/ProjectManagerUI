@@ -86,10 +86,11 @@ export class AddComponent implements OnInit {
         this.taskService.addParentTask(this.task).subscribe(
           resp => this.successMessage = 'Parent Task added successfully!',
           error => this.failureMessage = 'Add Parent task failed. Try again later');
+      }else{
+        this.taskService.addTask(this.task).subscribe(
+          resp => this.successMessage = 'Task added successfully!',
+          error => this.failureMessage = 'Add task failed. Try again later');
       }
-      this.taskService.addTask(this.task).subscribe(
-        resp => this.successMessage = 'Task added successfully!',
-        error => this.failureMessage = 'Add task failed. Try again later');
     }
     this.initialize();
   }

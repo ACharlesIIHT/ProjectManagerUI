@@ -2,7 +2,7 @@
   <div class="form-group">
     <div class="row">
       <label for="pname" class="col-md-1">Project:</label><br>
-      <input type="text" class="col-md-4 form-control" placeholder="Search..." disabled id="pname" [(ngModel)]="searchItem" name="pname" style="background-color:#f7d7af">&nbsp;&nbsp;
+      <input type="text" class="col-md-4 form-control" placeholder="Search..." disabled id="pname" [(ngModel)]="searchItem" name="pname" style="background-color:#d3d3d3">&nbsp;&nbsp;
       <button type="button" class="col-md-1 btn btn-info" (click)="openProjectModel()" value="search">Search</button>&nbsp;&nbsp;
       <div>Sort Task By</div>&nbsp;&nbsp;
       <button type="button" class="btn btn-info btn-sm" (click)="sortByStartDate()" value="Start Date">Start Date</button>&nbsp;&nbsp;
@@ -99,7 +99,7 @@
             <p>Please select anyone of the project below</p>
             <div class="form-group">
               <input type="text" placeholder="Search..." class="col-md-9 form-control" id="searchItem" name="searchItem" [(ngModel)]="searchItem"
-                style="background-color:#f7d7af">
+                style="background-color:#d3d3d3">
             </div>
             <div class="list-group">
               <li class="list-group-item" *ngFor="let project of projects | filterProject:searchItem">

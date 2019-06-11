@@ -1,27 +1,27 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { AddtaskComponent } from './addtask/addtask.component';
-import { ViewtaskComponent } from './viewtask/viewtask.component';
-import { UpdatetaskComponent } from './updatetask/updatetask.component';
+import { AddComponent } from './task-add/add.component';
+import { ViewComponent } from './task-view/view.component';
+import { UpdateComponent } from './task-update/update.component';
 import { ProjectComponent } from './project/project.component';
 import { UserComponent } from './user/user.component';
 
 const routes: Routes = [
   {
     path: '',
-    component: AddtaskComponent
+    component: AddComponent
   },
   {
     path: 'add',
-    component: AddtaskComponent
+    component: AddComponent
   },
   {
     path: 'view',
-    component: ViewtaskComponent
+    component: ViewComponent
   },
   {
     path: 'update/:id',
-    component: UpdatetaskComponent
+    component: UpdateComponent
   },
   {
     path: 'project',

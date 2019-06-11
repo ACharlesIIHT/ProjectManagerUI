@@ -6,7 +6,7 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 })
 export class ProjectService {
 
-  private baseURI: String = "http://localhost:8081/projectservice/";
+  private baseURI: String = "http://localhost:8081/projectmanager/";
 
   constructor(private http: HttpClient) { }
 

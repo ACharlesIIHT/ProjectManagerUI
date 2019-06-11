@@ -4,7 +4,7 @@ import { Task } from '../model/task'
 @Pipe({
   name: 'filtertask'
 })
-export class FiltertaskPipe implements PipeTransform {
+export class FilterPipe implements PipeTransform {
 
   transform(tasks?: Task[], name?: string): Task[] {
     if (!tasks) {

@@ -8,13 +8,13 @@
       <div class="row">
         <label for="projectname" class="col-md-2">Project:</label>
         <input type="text" class="col-md-4 form-control" disabled id="projectname" name="projectname" [(ngModel)]="task.project.name"
-          style="background-color:#f7d7af">&nbsp;
+          style="background-color:#d3d3d3">&nbsp;
       </div>
     </div>
     <div class="form-group">
       <div class="row">
         <label for="task" class="col-md-2">Task:</label>
-        <input type="text" class="col-md-4 form-control" id="task" [disabled]=viewOnly name="task" [(ngModel)]="task.task" style="background-color:#f7d7af">
+        <input type="text" class="col-md-4 form-control" id="task" [disabled]=viewOnly name="task" [(ngModel)]="task.task" style="background-color:#d3d3d3">
       </div>
     </div>
     <div *ngIf="enableParent">
@@ -36,22 +36,21 @@
       <div class="form-group">
         <div class="row">
           <label for="ptask" class="col-md-2">Parent Task:</label>
-          <input type="text" class="col-md-4 form-control" id="ptask" disabled name="ptask" [(ngModel)]="task.parent.task" style="background-color:#f7d7af">&nbsp;&nbsp;
+          <input type="text" class="col-md-3 form-control" id="ptask" disabled name="ptask" [(ngModel)]="task.parent.task" style="background-color:#d3d3d3">&nbsp;&nbsp;
           <button *ngIf="!viewOnly" type="button" class="col-md-1" (click)="openParentModel()" value="search">Search</button>
         </div>
       </div>
       <div class="form-group">
         <div class="row">
           <label for="sdate" class="col-md-2">Start Date:</label>
-          <input type="date" class="col-md-4 form-control" id="sdate" [disabled]=viewOnly name="sdate" [(ngModel)]="task.startDate"
-            style="background-color:#f7d7af">
+          <input type="date" class="col-md-2 form-control" id="sdate" [disabled]=viewOnly name="sdate" [(ngModel)]="task.startDate"
+            style="background-color:#d3d3d3">&nbsp;&nbsp;&nbsp;&nbsp;
+           <label for="edate" class="">End Date:</label>&nbsp;&nbsp;
+           <input type="date" class="col-md-2 form-control" id="edate" [disabled]=viewOnly name="edate" [(ngModel)]="task.endDate" style="background-color:#d3d3d3">
         </div>
       </div>
       <div class="form-group">
-        <div class="row">
-          <label for="edate" class="col-md-2">End Date:</label>
-          <input type="date" class="col-md-4 form-control" id="edate" [disabled]=viewOnly name="edate" [(ngModel)]="task.endDate" style="background-color:#f7d7af">
-        </div>
+        
       </div>
       <div *ngIf="dateError" class="row">
         <div class="col-md-2"></div>
@@ -78,7 +77,7 @@
             <p>Please select anyone of the task below as Parent Task</p>
             <div class="form-group">
               <input type="text" placeholder="Search..." class="col-md-9 form-control" id="searchItem" name="searchItem" [(ngModel)]="searchItem"
-                style="background-color:#f7d7af">
+                style="background-color:#d3d3d3">
             </div>
             <div class="list-group">
               <li class="list-group-item" *ngFor="let parent of allParent | filterparent:searchItem">

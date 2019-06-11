@@ -7,7 +7,7 @@
     <div class="form-group">
       <div class="row">
         <label for="fname" class="col-md-2">First Name:</label>
-        <input type="text" class="col-md-9 form-control" id="fname" name="fname" required [(ngModel)]="user.firstName" style="background-color:#f7d7af">&nbsp;
+        <input type="text" class="col-md-5 form-control" id="fname" name="fname" required [(ngModel)]="user.firstName" style="background-color:#d3d3d3">&nbsp;
       </div>
       <div *ngIf="fnameError" class="row">
         <div class="col-md-2"></div>
@@ -17,7 +17,7 @@
     <div class="form-group">
       <div class="row">
         <label for="lname" class="col-md-2">Last Name:</label>
-        <input type="text" class="col-md-9 form-control" id="lname" name="lname" required [(ngModel)]="user.lastName" style="background-color:#f7d7af">&nbsp;
+        <input type="text" class="col-md-5 form-control" id="lname" name="lname" required [(ngModel)]="user.lastName" style="background-color:#d3d3d3">&nbsp;
       </div>
       <div *ngIf="lnameError" class="row">
         <div class="col-md-2"></div>
@@ -27,7 +27,7 @@
     <div class="form-group">
       <div class="row">
         <label for="empId" class="col-md-2">Employee ID:</label>
-        <input type="text" class="col-md-4 form-control" id="empId" name="empId" required [(ngModel)]="user.employeeId" style="background-color:#f7d7af">&nbsp;
+        <input type="text" class="col-md-3 form-control" id="empId" name="empId" required [(ngModel)]="user.employeeId" style="background-color:#d3d3d3">&nbsp;
       </div>
       <div *ngIf="empIdError" class="row">
         <div class="col-md-2"></div>
@@ -36,7 +36,7 @@
     </div>
     <div class="form-group">
       <div class="row">
-        <div class="col-md-9"></div>
+        <div class="col-md-5"></div>
         <button type="submit" value="Add" class="col-md-1 btn btn-primary" (click)="save($event)">{{saveType}}</button>&nbsp;
         <button type="button" value="Reset" (click)="reset()" class="col-md-1">Reset</button>
       </div>
@@ -45,9 +45,9 @@
   </form>
   <div class="form-group">
     <div class="row">
-      <div class="col-md-2"></div>
+      <div class="col-md-1"></div>
       <input type="text" class="col-md-3 form-control" placeholder="Search..." id="empName" name="empName" [(ngModel)]="empName"
-        style="background-color:#f7d7af">
+        style="background-color:#d3d3d3">
       <div class="col-md-1">Sort:</div>
       <button type="button" class="col-md-2" (click)="sortByFirstName()" value="First Name">First Name</button>&nbsp;&nbsp;
       <button type="button" class="col-md-2" (click)="sortByLastName()" value="Last Name">Last Name</button>&nbsp;&nbsp;
@@ -63,19 +63,19 @@
           <div class="row">
             <label for="showfname" class="col-md-3">First Name</label>
             <input type="text" disabled class="col-md-8 form-control" id="showfname" name="showfname" required [(ngModel)]="user.firstName"
-              style="background-color:#f7d7af">
+              style="background-color:#d3d3d3">
           </div>
           <br>
           <div class="row">
             <label for="showlname" class="col-md-3">Last Name</label>
             <input type="text" disabled class="col-md-8 form-control" id="showlname" name="showlname" required [(ngModel)]="user.lastName"
-              style="background-color:#f7d7af">
+              style="background-color:#d3d3d3">
           </div>
           <br>
           <div class="row">
             <label for="showempid" class="col-md-3">Employee ID</label>
             <input type="text" disabled class="col-md-8 form-control" id="showempid" name="showempid" required [(ngModel)]="user.employeeId"
-              style="background-color:#f7d7af">
+              style="background-color:#d3d3d3">
           </div>
         </div>
         <div class="col-md-2">
