@@ -13,7 +13,7 @@
   </div>
   <br>
   <hr style="border-top: solid 1px;">
-  <div class="row text-center" *ngFor="let task of tasks | filtertask:searchItem">
+  <div class="row text-center" *ngFor="let task of tasks | filter:searchItem">
     <div class="col-md-3">
       <div class="row column-text-align">
         <strong>Task</strong>

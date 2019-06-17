@@ -1,7 +1,7 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
-import { FiltertaskPipe } from '../pipe/filtertask.pipe';
+import { FilterPipe } from '../pipe/filter.pipe';
 import { ViewComponent } from './view.component';
 import { RouterTestingModule } from '@angular/router/testing';
 import { DatePipe } from '@angular/common';
@@ -13,7 +13,7 @@ describe('ViewComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ViewComponent, FiltertaskPipe, ProjectPipe],
+      declarations: [ViewComponent, FilterPipe, ProjectPipe],
       imports: [FormsModule, HttpClientModule, RouterTestingModule],
       providers: [DatePipe]
     })

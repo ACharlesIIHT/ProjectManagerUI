@@ -2,7 +2,7 @@ import { Pipe, PipeTransform } from '@angular/core';
 import { Task } from '../model/task'
 
 @Pipe({
-  name: 'filtertask'
+  name: 'filter'
 })
 export class FilterPipe implements PipeTransform {
 
